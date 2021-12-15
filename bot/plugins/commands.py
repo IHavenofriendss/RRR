@@ -123,7 +123,7 @@ async def start(bot, update):
         InlineKeyboardButton('Channel 📜', url=f'{MT_CHANNEL}'),
     ],[
         InlineKeyboardButton('⚙️ Help', callback_data="help")
-        InlineKeyboardButton('Close 🔒', url=f'{MT_CHANNEL}')
+        InlineKeyboardButton('Close', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
