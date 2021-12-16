@@ -140,11 +140,6 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
-    buttons = [[
-        InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 🗑️', callback_data='close')
-    ]]
-    
-    reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_message(
         chat_id=update.chat.id,
