@@ -154,3 +154,12 @@ async def about(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
+
+
+@Client.on_message(filters.via_bot & filters.group)
+async def inline(bot,message):
+     await message.delete()
+
+@Client.on_message(filters.command(["Help"]))
+async def start(bot, update):
+ txt = await update.reply_text("<i>നീ ഏതാ..... ഒന്ന് പോടെയ് അവൻ help ചോയ്ച്ച് വന്നിരിക്കുന്നു😤...I'm Different Bot U Know😒</i>")
