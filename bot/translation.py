@@ -16,14 +16,14 @@ class Translation(object):
     
     ABOUT_TEXT = """<b>Bot Info</b>
 
-<i>Name : Auto Filter Bot V4
-Creator : <a href="https://t.me/THOMAS_MOVIE_HUT">BLACK DEVIL </a> For <a href="https://t.me/MOVIE_HUT_GROUP">MOVIE HUT</a>
-Group Owner :<a href="https://t.me/amith_04">AMITH</a> 
-Language : Python3
-Library : <a href="https://docs.pyrogram.org/">Pyrogram 1.2.9</a>
-Source Code : <a href="https://t.me/nokkiiru_nnoippokittum">Click Here</a>
-Server : <a href="https://dashboard.heroku.com/">Heroku</a>
-Build Status : Beta V4.0</i>
+<b>Name :</b> <i><a href="https://t.me/CinemaLogam_bot">EMILIA CLARKE</a></i>
+<b>Creator :</b> <i><a href="https://t.me/THOMAS_MOVIE_HUT">BLACK DEVIL </a> For <a href="https://t.me/MOVIE_HUT_GROUP">MOVIE HUT</a></i>
+<b>Group Owner :</b> <i><a href="https://t.me/amith_04">AMITH</a></i>
+<b>Language :</b> <i><a href="https://www.python.org/downloads/">Python3</a></i>
+<b>Library :</b> <i><a href="https://docs.pyrogram.org/">Pyrogram 1.2.9</a></i>
+<b>Source Code :</b><i> <a href="https://t.me/nokkiiru_nnoippokittum">Click Here</a></i>
+<b>Server :</b> <i><a href="https://dashboard.heroku.com/">Heroku</a></i>
+<b>Build Status : Beta V4.0</b>
 
 Note : <code>നിങ്ങൾക്ക് എന്നെ വേറെ ഒരിടത്തും ഉപയോഗിക്കാൻ പറ്റൂല വേണേൽ നിങ്ങൾക്ക് Start,Help,About ഒക്കെ അടിച്ച് കളിക്കാം അത്ര മാത്രം..ഇത്രേ എനിക്ക് ചെയ്ത് തരാൻ പറ്റൂ🤭</code>
 """
