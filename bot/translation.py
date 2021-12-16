@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @AlbertEinsteinTG @MRK_YT
+# (c) @BLACK_DEVIL_TG & JOEL_NOOB
 
 class Translation(object):
     
@@ -23,7 +23,7 @@ class Translation(object):
 <b>Library :</b> <i><a href="https://docs.pyrogram.org/">Pyrogram 1.2.9</a></i>
 <b>Source Code :</b><i> <a href="https://t.me/nokkiiru_nnoippokittum">Click Here</a></i>
 <b>Server :</b> <i><a href="https://dashboard.heroku.com/">Heroku</a></i>
-<b>Build Status : Beta V4.0</b>
+<b>Build Status : Beta V2.0</b>
 
 Note : <code>നിങ്ങൾക്ക് എന്നെ വേറെ ഒരിടത്തും ഉപയോഗിക്കാൻ പറ്റൂല വേണേൽ നിങ്ങൾക്ക് Start,Help,About ഒക്കെ അടിച്ച് കളിക്കാം അത്ര മാത്രം..ഇത്രേ എനിക്ക് ചെയ്ത് തരാൻ പറ്റൂ🤭</code>
 """
