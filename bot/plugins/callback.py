@@ -1660,20 +1660,6 @@ async def callback_data(bot, update: CallbackQuery):
         )
 
 
-    elif query_data == "help":
-        buttons = [[
-            InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 🗑️', callback_data='close')
-        ]]
-    
-        reply_markup = InlineKeyboardMarkup(buttons)
-        
-        await update.message.edit_text(
-            Translation.HELP_TEXT,
-            reply_markup=reply_markup,
-            parse_mode="html",
-            disable_web_page_preview=True
-        )
-
 
     elif query_data == "about": 
         buttons = [[
