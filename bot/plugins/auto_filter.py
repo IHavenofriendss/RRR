@@ -1,3 +1,4 @@
+#Bug Fix @BLACK_DEVIL_TG
 import re
 import logging
 import asyncio
@@ -209,7 +210,7 @@ async def auto_filter(bot, update):
             await bot.send_photo(
                 chat_id = update.chat.id,
                 photo= MASSAGE_PHOTO,
-                caption=f"<i>Found{(len_results)} Results For Your Query:</i> <code>{query}</code>\n\n<b>താങ്കൾക്ക് കിട്ടിയ ഈ ഫിൽറ്റർ മെസ്സേജ് കാലാവധി വെറും 10 മിനിറ്റ് മാത്രം</b>",
+                caption=f"<i>Found {(len_results)} Results For Your Query:</i> <code>{query}</code>\n\n<b>താങ്കൾക്ക് കിട്ടിയ ഈ ഫിൽറ്റർ മെസ്സേജ് കാലാവധി വെറും 10 മിനിറ്റ് മാത്രം</b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
