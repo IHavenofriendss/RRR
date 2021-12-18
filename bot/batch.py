@@ -5,7 +5,7 @@ import asyncio
 from bot import Bot
 from utils import temp
 from struct import pack
-from info import ADMINS
+from bot import ADMINS
 from pyrogram.file_id import FileId
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
