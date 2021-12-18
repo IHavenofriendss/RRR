@@ -136,6 +136,55 @@ async def start(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
+    file_id = message.command[1]
+    string = await decode(file_id)
+    argument = string.split("-")
+    grp_id = f"-{argument[3]}"
+    unique_id, f_id, file_ref, caption = await get_batch(grp_id, file_id)
+    if unique_id:
+        temp_msg = await message.reply("Please wait...")
+        file_args = f_id.split("#")
+        cap_args = caption.split("#")
+        i = 0
+        await asyncio.sleep(2)
+        await temp_msg.delete()
+        for b_file in file_args:
+            f_caption = cap_args[i]
+            if f_caption is None:
+                f_caption = ""
+            i += 1
+            try:
+                await client.send_cached_media(
+                    chat_id=message.from_user.id,
+                    file_id=b_file,
+                    caption=f_caption,
+                    parse_mode="html"
+
+                )
+            except Exception as err:
+                return await message.reply(f"{str(err)}")
+            await asyncio.sleep(1.5)
+        return
+    files_ = await get_file_details(file_id)
+    if not files_:
+        return await message.reply('No such file exist.')
+    files = files_[0]
+    title = files.file_name
+    size=get_size(files.file_size)
+    f_caption=files.caption
+    if CUSTOM_FILE_CAPTION:
+        try:
+            f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
+        except Exception as e:
+            logger.exception(e)
+            f_caption=f_caption
+    if f_caption is None:
+        f_caption = f"{files.file_name}"
+    await client.send_cached_media(
+        chat_id=message.from_user.id,
+        file_id=file_id,
+        caption=f_caption,
+        )
 
 
 @Client.on_message(filters.command(["about"]) & filters.private, group=1)
