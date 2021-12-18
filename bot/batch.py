@@ -11,7 +11,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from bot.database.batch_db import save_file
 from helper_func import get_message_id, encode, decode, get_message
-from database.connections_mdb import active_connection
+from bot.database.connections_mdb import active_connection
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 logger = logging.getLogger(__name__)
