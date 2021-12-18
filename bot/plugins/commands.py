@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @AlbertEinsteinTG & @Mrk_YT
+# (c) @BLACK_DEVIL_TG #Bug Fix #@JOEL_NOOB & @BLACK_DEVIL_TG
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -27,7 +27,7 @@ async def start(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text="<b>Join Main Channel And Refresh 😊</b>",
+                text="<b>Join Main Channel And Refresh 🙂</b>",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text="Join Channel", url=f"https://t.me/{UPDATE_CHANNEL}")]
               ])
