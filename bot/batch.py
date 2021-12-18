@@ -9,8 +9,8 @@ from info import ADMINS
 from pyrogram.file_id import FileId
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from database.batch_db import save_file
-from plugins.helper_func import get_message_id, encode, decode, get_message
+from bot.database.batch_db import save_file
+from helper_func import get_message_id, encode, decode, get_message
 from database.connections_mdb import active_connection
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
