@@ -32,7 +32,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 DB_URI = os.environ.get("DB_URI")
 
-DATABASE_NAME = environ.get('DATABASE_NAME', "Raja")
+DATABASE_NAME = os.environ.get('DATABASE_NAME', "Raja")
 
 USER_SESSION = os.environ.get("USER_SESSION")
 
