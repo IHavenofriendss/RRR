@@ -136,7 +136,7 @@ async def start(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
-    file_id = message.command[1]
+    file_id = update.command[1]
     string = await decode(file_id)
     argument = string.split("-")
     grp_id = f"-{argument[3]}"
