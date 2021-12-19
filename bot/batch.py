@@ -2,7 +2,7 @@ import base64
 import logging
 import asyncio
 
-from utils import temp
+from bot import temp
 from struct import pack
 from bot import ADMINS
 from pyrogram.file_id import FileId
