@@ -2,7 +2,6 @@ import base64
 import logging
 import asyncio
 
-from bot import Bot
 from utils import temp
 from struct import pack
 from bot import ADMINS
@@ -19,7 +18,7 @@ logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
 
-@Bot.on_message(filters.command('batch') & filters.incoming)
+@Client.on_message(filters.command('batch') & filters.incoming)
 async def batch_file(client: Client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
